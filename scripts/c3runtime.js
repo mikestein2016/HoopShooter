@@ -780,6 +780,7 @@ self.C3_JsPropNameTable = [
 	{TextTutorial: 0},
 	{skip: 0},
 	{BallLoader: 0},
+	{youwin: 0},
 	{Clock: 0},
 	{OppBHasBall: 0},
 	{OppRHasBall: 0},
@@ -1146,6 +1147,8 @@ self.C3_JsPropNameTable = [
 			const v2 = p._GetNode(2).GetVar();
 			return () => and((and((((and(((("[b]Results[/b]:" + "\n") + "\n") + "Your Score: "), v0.GetValue()) + " of 10") + "\n") + "Game Score: "), v1.GetValue()) + " to "), v2.GetValue());
 		},
+		() => "Win",
+		() => "Lose",
 		() => "AI3",
 		() => "Timer3",
 		() => "Player3",
